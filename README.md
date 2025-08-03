@@ -1,2 +1,6 @@
 # Similar-scholar-recommendation-system
 该方法通过融合学者5个维度的特征，并考虑学者研究兴趣可能随时间的动态变化来进行合作学者的推荐。
+
+papers_data.json是提供的数据集，其中包含3000篇论文的有关信息。运行recommendation algorithm.py会得到学者的各个维度的特征矩阵，分别是text_sim.json, social_rel.json, impact_scores.json 以及模型的权重文件temporal_recommendation_model.pth
+
+将得到的特征矩阵和权重文件与recommendation system.py放在同一路径下，在终端运行streamlit run recommendation system.py 就会运行推荐系统。
